@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#  Random Quote Generator | Internship Assignment (Nexium)
 
-## Getting Started
+This project is a **Random Quote Generator Web App** built as part of the Nexium internship assignment using  **ShadCN UI**, and **Next.js (+its  App Router)**,**Tailwind CSS**... The project fetches quotes by topic and displays a **"Quote of the Day"** feature with a polished user interface.
 
-First, run the development server:
+##  Live Demo
+
+Hosted on **Vercel**:  
+ [nexium-farhan-asign1.vercel.app](https://nexium-farhan-asign1-esb9d0y15-farhan-ahmeds-projects-fe312249.vercel.app)
+
+---
+
+##  Features Implemented
+
+### 1.  Quote Generator Page
+- Displays a curated list of motivational/inspirational quotes.
+- Allows filtering quotes by topic using a search field.
+- If no matching topic is found, shows:  
+  _“Please Enter quotes from suggested topics only!”_
+
+### 2. Quote of the Day Page
+- Displays a single quote based on the current date.
+- Each day shows a different quote deterministically.
+- Includes:
+  - White quote card
+  - Author name
+  - Back to Home button
+- Full background of the page set to **black** with only the card in **white** for contrast and focus.
+
+### 3.  UI Design
+- Tailwind CSS used for clean, responsive design.
+- ShadCN UI components like `Card` and `Separator` used for consistent styling.
+- Google Fonts integrated for typography.
+- Custom hover effects and gradient buttons implemented.
+
+### 4.  Topics Data
+- Quotes are stored as objects with `text`, `topic`, and `author`.
+- Topic-wise filtering implemented using `.filter()` and `toLowerCase()` matching logic.
+
+### 5.  Project Structure
+- Created with `create-next-app` using **App Router**.
+- Tailwind CSS configured properly in `tailwind.config.js`.
+- Components organized under `/components/ui/` and `/app/` folders.
+- Pages:
+  - `/` → Main Quotes page
+  - `/quote-of-day` → Daily quote
+
+### 6.  Deployment
+- Project is deployed on **Vercel** successfully.
+- Public URL:  
+  [https://nexium-farhan-asign1.vercel.app](https://nexium-farhan-asign1-esb9d0y15-farhan-ahmeds-projects-fe312249.vercel.app)
+
+---
+
+##  How to Run Locally
 
 ```bash
+# 1. Clone the repo
+git clone https://github.com/your-username/nexium-farhan-asign1.git
+cd nexium-farhan-asign1
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 4. Visit in browser
+http://localhost:3000
