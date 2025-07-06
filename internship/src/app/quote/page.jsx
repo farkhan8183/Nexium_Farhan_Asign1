@@ -58,17 +58,15 @@ export default function QuotesPage({ searchParams }) {
 
   return (
     <>
-    
-      <div className="min-h-screen w-full bg-gradient-to-t from-black via-blue-950 to-black ">
+      <div className="min-h-screen w-full bg-gradient-to-t from-black via-blue-950 to-black">
         <div className="px-4 sm:px-6 lg:px-8">
-
-        {/*warnin if  not found...     */}
+          {/*warnin if  not found...     */}
           {filteredQuotes.length === 0 ? (
             <p
               data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="1500"
-              className="text-center sm:text-[40px] text-gray-600 font-medium px-6 py-3 rounded-xl shadow-sm max-w-lg mx-auto animate-fade-in pt-100"
+              className="text-center sm:text-[40px] text-gray-600 font-medium px-6 py-3 rounded-xl shadow-sm max-w-lg mx-auto animate-fade-in pt-20"
             >
               Please Select your topic form suggested topics only!
             </p>
@@ -81,19 +79,18 @@ export default function QuotesPage({ searchParams }) {
                 >
                   {/* Quote Card */}
                   <Card
-                    className="w-full mt-15 h-110 sm:w-[500px] sm:h-[500px] max-w-full sm:max-w-3xl mx-auto rounded-3xl border border-blue-200/20 
+                    className="w-full mt-15 h-auto sm:w-[500px] sm:h-[500px] max-w-full sm:max-w-3xl mx-auto rounded-3xl border border-blue-200/20 
                     hover:scale-[1.015] transition-transform duration-500 ease-in-out relative overflow-hidden 
                     bg-gradient-to-tr from-blue-100/50 via-gray-50 to-blue-100/50 backdrop-blur-[2px] 
                     shadow-[0_30px_84px_rgba(0,0,70,0.10)]"
                   >
-                    <CardContent className="p-6 sm:p-10 md:p-14 space-y-8 relative z-10">
-
+                    <CardContent className="p-4 sm:p-10 md:p-14 space-y-8 relative z-10">
                       {/* Quote Text */}
                       <div className={`${merriweather.className} text-base sm:text-2xl italic text-center text-gray-800 leading-relaxed tracking-wide`}>
                         <div className="relative text-center px-2 sm:px-6 py-6 sm:py-8">
                           <span
                             data-aos="fade-right"
-                            className={`${playfair.className} absolute text-6xl sm:text-9xl text-gray-800 top-2 left-2 -translate-x-full`}
+                            className={`${playfair.className} absolute text-5xl sm:text-9xl text-gray-800 top-2 left-2 -translate-x-full`}
                           >“</span>
                           <p
                             data-aos="fade-right"
@@ -105,7 +102,7 @@ export default function QuotesPage({ searchParams }) {
                           </p>
                           <span
                             data-aos="fade-down-right"
-                            className={`${playfair.className} absolute text-6xl sm:text-9xl text-gray-800 bottom-2 right-2 translate-x-full`}
+                            className={`${playfair.className} absolute text-5xl sm:text-9xl text-gray-800 bottom-2 right-2 translate-x-full`}
                           >”</span>
                         </div>
                       </div>
@@ -161,7 +158,7 @@ export default function QuotesPage({ searchParams }) {
               ))}
 
               {/* Pagination  stuff  */}
-              <div className="flex flex-col sm:flex-row sm:ml-147 items-center gap-6 mt-6 text-sm text-white">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-6 text-sm text-white px-2">
                 <button
                   disabled={currentPage === 1}
                   onClick={() => setCurrentPage((prev) => prev - 1)}
@@ -170,7 +167,7 @@ export default function QuotesPage({ searchParams }) {
                   ← Prev Quote
                 </button>
 
-                <span className="text-gray-500 font-medium text-lg">
+                <span className="text-gray-500 font-medium text-lg text-center">
                   Quote <span className="font-extrabold text-red-900"> {currentPage}</span> of <span className="font-extrabold text-red-900">{totalPages}</span>
                 </span>
 
@@ -188,7 +185,7 @@ export default function QuotesPage({ searchParams }) {
           {/* Back to Home Button */}
           <a
             href="/"
-            className="inline-block text-white text-sm px-5 py-2 mt-20 sm:ml-180 rounded-full bg-gradient-to-r from-blue-900 to-gray-800 hover:from-blue-800 hover:to-gray-700 transition-all duration-300 text-center shadow-md"
+            className="inline-block text-white text-sm px-5 py-2 mt-10 sm:mt-20 rounded-full bg-gradient-to-r from-blue-900 to-gray-800 hover:from-blue-800 hover:to-gray-700 transition-all duration-300 text-center shadow-md w-full sm:w-auto text-center"
           >
             ← Back to Home
           </a>
