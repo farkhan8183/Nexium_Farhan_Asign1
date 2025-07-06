@@ -20,22 +20,22 @@ export default function QuoteForm() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-none space-y-4 ">
+    <div className="max-w-md mx-auto mt-none space-y-4">
       {/* form */}
       <form onSubmit={handleSubmit} className="flex gap-2">
-        <Input
+        <Input  className="bg-gray-100 hover:bg-white"
           type="text"
-          placeholder="Enter a topic from the list below!"
+          placeholder="Select topic from the list below and get 3 quotes!            "
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
         />
-        <Button type="submit">Get Quotes</Button>
+        <Button className="cursor-pointer hover:bg-white    hover:text-black  hover:border-1 hover:border-black  hover:font-bold " type="submit">Get Quotes</Button>
       </form>
 
       {/* suggestions */}
       <div className="flex flex-wrap gap-2 justify-center mt-2">
         {suggestions.map((tag, index) => (
-          <Button
+          <Button   className="cursor-pointer hover:bg-black  hover:text-white                           "
             key={index}
             variant="outline"
             size="sm"
