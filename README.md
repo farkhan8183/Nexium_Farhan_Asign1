@@ -5,7 +5,7 @@ This project is a **Random Quote Generator Web App** built as part of the Nexium
 ##  Live Demo
 
 Hosted on **Vercel**:  
- [nexium-farhan-asign1.vercel.app](https://nexium-farhan-asign1-esb9d0y15-farhan-ahmeds-projects-fe312249.vercel.app)
+ [nexium-farhan-asign1.vercel.app](nexium-farhan-asign1-cyc6g7ehd-farhan-ahmeds-projects-fe312249.vercel.app)
 
 ---
 
@@ -47,7 +47,7 @@ Hosted on **Vercel**:
 ### 6.  Deployment
 - Project is deployed on **Vercel** successfully.
 - Public URL:  
-  [https://nexium-farhan-asign1.vercel.app](https://nexium-farhan-asign1.vercel.app/)
+  [https://nexium-farhan-asign1.vercel.app](nexium-farhan-asign1-cyc6g7ehd-farhan-ahmeds-projects-fe312249.vercel.app)
 
 ---
 
