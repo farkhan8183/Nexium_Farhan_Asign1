@@ -47,7 +47,7 @@ Hosted on **Vercel**:
 ### 6.  Deployment
 - Project is deployed on **Vercel** successfully.
 - Public URL:  
-  [https://nexium-farhan-asign1.vercel.app](https://nexium-farhan-asign1-esb9d0y15-farhan-ahmeds-projects-fe312249.vercel.app)
+  [https://nexium-farhan-asign1.vercel.app](https://nexium-farhan-asign1.vercel.app/)
 
 ---
 
@@ -59,8 +59,9 @@ git clone https://github.com/your-username/nexium-farhan-asign1.git
 cd nexium-farhan-asign1
 
 # 2. Install dependencies
-npm install
 
+npm install
+cd internship
 # 3. Start the development server
 npm run dev
 
